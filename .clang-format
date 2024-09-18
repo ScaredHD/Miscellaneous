@@ -1,20 +1,32 @@
-Language:        Cpp
-BasedOnStyle:  Google
+Language: Cpp
+BasedOnStyle: Google
+
+ColumnLimit: 100
 AccessModifierOffset: -2
-AllowShortEnumsOnASingleLine: False
+IndentWidth: 2
+ContinuationIndentWidth: 4
+
+# AlignAfterOpenBracket: DontAlign
+AllowShortBlocksOnASingleLine: Empty
+AllowShortEnumsOnASingleLine: True
 AllowShortFunctionsOnASingleLine: Inline
-AllowShortLambdasOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: All
+AllowShortLoopsOnASingleLine: False
 AllowAllArgumentsOnNextLine: False
 AllowAllParametersOfDeclarationOnNextLine: False
+InsertBraces: False
+
 AlignConsecutiveAssignments: None
 AlignConsecutiveDeclarations: None
-AlignOperands: Align
+AlignOperands: AlignAfterOperator
+# AlignArrayOfStructures: Right
+
 BinPackArguments: False
 BinPackParameters: False
-ColumnLimit:     100
+
+BreakAfterAttributes: Leave
 Cpp11BracedListStyle: True
-IndentWidth:     4
-InsertBraces: True
 PackConstructorInitializers: CurrentLine
 SortIncludes: CaseInsensitive
 IncludeBlocks: Preserve
