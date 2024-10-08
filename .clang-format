@@ -6,31 +6,42 @@ AccessModifierOffset: -2
 IndentWidth: 2
 ContinuationIndentWidth: 4
 
-# AlignAfterOpenBracket: DontAlign
+AlignConsecutiveAssignments: None
+AlignConsecutiveDeclarations: None
+AlignOperands: AlignAfterOperator
+AlignEscapedNewlines: LeftWithLastLine
+
 AllowShortBlocksOnASingleLine: Empty
 AllowShortEnumsOnASingleLine: True
 AllowShortFunctionsOnASingleLine: Inline
 AllowShortIfStatementsOnASingleLine: Never
-AllowShortLambdasOnASingleLine: All
 AllowShortLoopsOnASingleLine: False
+AllowShortLambdasOnASingleLine: All
 AllowAllArgumentsOnNextLine: False
 AllowAllParametersOfDeclarationOnNextLine: False
 InsertBraces: False
 
-AlignConsecutiveAssignments: None
-AlignConsecutiveDeclarations: None
-AlignOperands: AlignAfterOperator
-# AlignArrayOfStructures: Right
-
-BinPackArguments: False
-BinPackParameters: False
+SpaceBeforeCpp11BracedList: false
+SpaceAfterTemplateKeyword: false
 
 BreakAfterAttributes: Leave
-Cpp11BracedListStyle: True
+
+BinPackArguments: True
+BinPackParameters: True
 PackConstructorInitializers: CurrentLine
+
+MaxEmptyLinesToKeep: 2
+KeepEmptyLines:
+  AtEndOfFile: false
+  AtStartOfBlock: true
+  AtStartOfFile: true
+
+Cpp11BracedListStyle: True
 SortIncludes: CaseInsensitive
 IncludeBlocks: Preserve
-SpaceBeforeCpp11BracedList: False
 SeparateDefinitionBlocks: Always
 UseTab: Never
 PenaltyBreakAssignment: 100
+
+IndentPPDirectives: BeforeHash
+FixNamespaceComments: true
