@@ -37,9 +37,19 @@ KeepEmptyLines:
   AtStartOfFile: true
 
 Cpp11BracedListStyle: True
+
 SortIncludes: CaseInsensitive
-IncludeBlocks: Preserve
-SeparateDefinitionBlocks: Always
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '.+\.generated.h"$'
+    Priority: 100
+  - Regex: "<.*"
+    Priority: 1
+  - Regex: '".*'
+    Priority: 2
+
+SeparateDefinitionBlocks: Leave
+
 UseTab: Never
 PenaltyBreakAssignment: 100
 
