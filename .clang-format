@@ -18,21 +18,21 @@ AlignEscapedNewlines: LeftWithLastLine
 AlignAfterOpenBracket: BlockIndent
 
 AllowShortBlocksOnASingleLine: Empty
-AllowShortEnumsOnASingleLine: True
+AllowShortEnumsOnASingleLine: true
 AllowShortFunctionsOnASingleLine: Inline
 AllowShortIfStatementsOnASingleLine: Never
-AllowShortLoopsOnASingleLine: False
+AllowShortLoopsOnASingleLine: false
 AllowShortLambdasOnASingleLine: All
-AllowAllParametersOfDeclarationOnNextLine: False
-InsertBraces: False
+AllowAllParametersOfDeclarationOnNextLine: false
+InsertBraces: false
 
 SpaceBeforeCpp11BracedList: false
 SpaceAfterTemplateKeyword: false
 
 BreakAfterAttributes: Leave
 
-BinPackArguments: True
-BinPackParameters: True
+BinPackArguments: true
+BinPackParameters: false
 PackConstructorInitializers: CurrentLine
 
 MaxEmptyLinesToKeep: 2
@@ -41,7 +41,7 @@ KeepEmptyLines:
   AtStartOfBlock: true
   AtStartOfFile: true
 
-Cpp11BracedListStyle: True
+Cpp11BracedListStyle: true
 
 SortIncludes: CaseInsensitive
 IncludeBlocks: Regroup
